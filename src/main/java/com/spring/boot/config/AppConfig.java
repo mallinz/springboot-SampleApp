@@ -23,8 +23,6 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.ClassPathResource;
 
-import com.opensymphony.sitemesh.webapp.SiteMeshFilter;
-
 @Configuration
 @ComponentScan(basePackages = "com.spring.boot")
 @EnableAutoConfiguration
@@ -55,15 +53,15 @@ public class AppConfig {
 		return resource;
 	}
 
-	@Bean
+	/*@Bean
 	public FilterRegistrationBean xssSanitizerFilter() {
 		FilterRegistrationBean registration = new FilterRegistrationBean();
 		registration.setFilter(new RequestFilter());
-		registration.addUrlPatterns("*.do");
+		registration.addUrlPatterns("/*");
 		registration.setName("XssFilter");
 		return registration;
 	}
-
+*/
 	@Bean
 	public DataSource dataSource() {
 		DataSource pool = new DataSource();
@@ -113,13 +111,13 @@ public class AppConfig {
 		return t;
 	}
 
-	@Bean(name = "sitemeshFilterRegistration")
+	/*@Bean(name = "sitemeshFilterRegistration")
 	public FilterRegistrationBean siteMeshFilterRegistration() {
 		FilterRegistrationBean registration = new FilterRegistrationBean();
 		registration.setFilter(new SiteMeshFilter());
 		registration.addUrlPatterns("/*");
 		registration.setName("sitemeshFilter");
 		return registration;
-	}
+	}*/
 
 }
