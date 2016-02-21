@@ -14,7 +14,7 @@ public class HelloController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/hello.do")
+	@RequestMapping(value = "/home.do")
 	public ModelAndView hello() {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("name", "Navin");
