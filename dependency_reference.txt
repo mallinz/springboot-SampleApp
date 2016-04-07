@@ -4,17 +4,7 @@
         <artifactId>tomcat-jdbc</artifactId>
         <version>8.0.23</version>
       </dependency>
-		<dependency>
-			<groupId>com.tgt.ecl</groupId>
-			<artifactId>tgt-ecl-test</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tgt.merch.maven</groupId>
-			<artifactId>inv-springboot</artifactId>
-			<version>1.0.2</version>
-			<type>pom</type>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -26,18 +16,6 @@
 			<version>2.4.2</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.tgt.ecl</groupId>
-			<artifactId>Target_JEEApp_EnterpriseCommonLibrary_TC</artifactId>
-			<version>1.1.4</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.tgt.ecl</groupId>
-			<artifactId>tgt-xss-sanitizer</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
